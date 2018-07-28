@@ -1,0 +1,173 @@
+<!--pages/store/store.wxml-->
+<!-- <text>pages/store/store.wxml</text> -->
+<view class='header'>
+    <view class='now-address'>
+        <view class='now-shop'>当前门店：</view>
+        <navigator class='choose-shop' url='../navigator/choose' data-nowsite='{{nowsite}}' bindtap="chooseShop">{{nowsite}}</navigator>
+        <image src='../img/icon1.png' mode='widthFix'></image>
+    </view>
+    <!-- 轮播图 -->
+    <swiper class='viewpages bg' autoplay='true' duration='1000' circular='true'>
+        <block wx:for="{{imglink}}">
+            <swiper-item>
+                <image src='{{item}}' class='slide-image'/>
+            </swiper-item>
+        </block>
+    </swiper>
+
+</view>
+<view class='today'>
+    <view class='title'>
+        <image src='../img/icon2.png' mode='widthFix'></image>
+        <text>今日必拼</text>
+    </view>
+
+    <scroll-view scroll-x class='slide'>
+        <view class='sro-item item-first'>
+            <image src="{{scroll.box1.image}}" mode='widthFix'></image>
+            <view class='text-pad'>
+                <text class='h1'>{{scroll.box1.name}}</text>
+                <text class='sell'>{{scroll.box1.sell}}</text>
+                <view class='text-btm'>
+                    <text class='people-box'>{{scroll.box1.peo}}</text>
+                    <text class='gray'>{{scroll.box1.now}}</text>
+                </view>
+            </view>
+        </view>
+        <view class='sro-item'>
+            <image src="{{scroll.box2.image}}" mode='widthFix'></image>
+            <view class='text-pad'>
+                <text class='h1'>{{scroll.box2.name}}</text>
+                <text class='sell'>{{scroll.box2.sell}}</text>
+                <view class='text-btm'>
+                    <text class='people-box'>{{scroll.box2.peo}}</text>
+                    <text class='gray'>{{scroll.box2.now}}</text>
+                </view>
+            </view>
+        </view>
+        <view class='sro-item'>
+            <image src="{{scroll.box1.image}}" mode='widthFix'></image>
+            <view class='text-pad'>
+                <text class='h1'>{{scroll.box1.name}}</text>
+                <text class='sell'>{{scroll.box1.sell}}</text>
+                <view class='text-btm'>
+                    <text class='people-box'>{{scroll.box1.peo}}</text>
+                    <text class='gray'>{{scroll.box1.now}}</text>
+                </view>
+            </view>
+        </view>
+        <view class='sro-item'>
+            <image src="{{scroll.box2.image}}" mode='widthFix'></image>
+            <view class='text-pad'>
+                <text class='h1'>{{scroll.box2.name}}</text>
+                <text class='sell'>{{scroll.box2.sell}}</text>
+                <view class='text-btm'>
+                    <text class='people-box'>{{scroll.box2.peo}}</text>
+                    <text class='gray'>{{scroll.box2.now}}</text>
+                </view>
+            </view>
+        </view>
+        <view class='sro-item'>
+            <image src="{{scroll.box1.image}}" mode='widthFix'></image>
+            <view class='text-pad'>
+                <text class='h1'>{{scroll.box1.name}}</text>
+                <text class='sell'>{{scroll.box1.sell}}</text>
+                <view class='text-btm'>
+                    <text class='people-box'>{{scroll.box1.peo}}</text>
+                    <text class='gray'>{{scroll.box1.now}}</text>
+                </view>
+            </view>
+        </view>
+        <view class='sro-item'>
+            <image src="{{scroll.box2.image}}" mode='widthFix'></image>
+            <view class='text-pad'>
+                <text class='h1'>{{scroll.box2.name}}</text>
+                <text class='sell'>{{scroll.box2.sell}}</text>
+                <view class='text-btm'>
+                    <text class='people-box'>{{scroll.box2.peo}}</text>
+                    <text class='gray'>{{scroll.box2.now}}</text>
+                </view>
+            </view>
+        </view>
+    </scroll-view> 
+        
+    <view>
+        <view class='item'>
+            <image src="{{item.box1.image}}" mode='widthFix'></image>
+            <text class='h1'>{{item.box1.h}}</text>
+            <text class='p'>{{item.box1.p}}</text>
+            <text class='sell'>{{item.box1.sell}}</text>
+            <text class='price'>{{item.box1.price}}</text>
+            <button class='buy-now'>立即抢</button>
+            <view>
+                <text class='people-box'>{{item.box1.peo}}</text>
+                <text class='gray'>2{{item.box1.gray}}</text>
+            </view>
+        </view>
+        <view class='item'>
+            <image src="{{item.box2.image}}" mode='widthFix'></image>
+            <text class='h'>{{item.box2.h}}</text>
+            <text class='p'>{{item.box2.p}}</text>
+            <text class='sell'>{{item.box2.sell}}</text>
+            <text class='price'>{{item.box2.price}}</text>
+            <button class='buy-now'>立即抢</button>
+            <view>
+                <text class='people-box'>{{item.box2.peo}}</text>
+                <text class='gray'>2{{item.box2.gray}}</text>
+            </view>
+        </view>
+    </view>
+</view>
+
+<view class='city'>
+    <view class='title'>
+        <image src='../img/icon2.png' mode='widthFix'></image>
+        <text>同城好货</text>
+    </view>
+
+    <view class='last'>
+        <view class='address'>
+            <image src='../img/icon3.png' mode='widthFix' class='shop'></image>
+            <text class='name'>{{address.first.name}}</text>
+            <text class='distance'>{{address.first.distance}}</text>
+            <text class='more'>更多</text>
+            <image src='../img/icon1.png' class='turn'></image>
+        </view>
+        <view class='item'>
+            <image src="{{item.box3.image}}" mode='widthFix'></image>
+            <text class='h'>{{item.box3.h}}</text>
+            <text class='p'>{{item.box3.p}}</text>
+            <text class='sell'>{{item.box3.sell}}</text>
+            <text class='price'>{{item.box3.price}}</text>
+            <button class='buy-now'>立即抢</button>
+            <view>
+                <text class='people-box'>{{item.box3.peo}}</text>
+                <text class='gray'>2{{item.box3.gray}}</text>
+            </view>
+        </view>
+        <view class='address'>
+            <image src='../img/icon3.png' mode='widthFix' class='shop'></image>
+            <text class='name'>{{address.second.name}}</text>
+            <text class='distance'>{{address.second.distance}}</text>
+            <text class='more'>更多</text>
+            <image src='../img/icon1.png' class='turn'></image>
+        </view>
+        <view class='item'>
+            <image src="{{item.box1.image}}" mode='widthFix'></image>
+            <text class='h1'>{{item.box1.h}}</text>
+            <text class='p'>{{item.box1.p}}</text>
+            <text class='sell'>{{item.box1.sell}}</text>
+            <text class='price'>{{item.box1.price}}</text>
+            <button class='buy-now'>立即抢</button>
+            <view>
+                <text class='people-box'>{{item.box1.peo}}</text>
+                <text class='gray'>2{{item.box1.gray}}</text>
+            </view>
+        </view>
+    </view>
+</view>
+
+<view class='btm-btn'>
+    <button class="good {{isChoose?'choose':'normal'}}" bindtap='gclick'>好货拼团</button>
+    <button class="mine {{isChoose?'normal':'choose'}}" bindtap='mclick'>我的拼团</button>
+</view>

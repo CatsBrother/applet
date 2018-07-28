@@ -1,0 +1,269 @@
+/* pages/store/store.wxss */
+page{
+    background-color: #f7f7f7;
+}
+.now-address{
+    display: flex;
+    flex-direction: row;
+    font: 30rpx/90rpx Sans-serif;
+    padding-left: 30rpx;
+    background-color: #fff;
+}
+.now-address image{
+    width: 24rpx;
+    padding: 40rpx;
+}
+.viewpages{
+    padding: 25rpx 0;
+}
+swiper-item image{
+    width: 750rpx;
+    height: 300rpx;
+}
+.title{
+    height: 91rpx;
+    border-bottom: solid 1rpx #dbdbdb;
+    line-height: 90rpx;
+    background-color: #fff;
+}
+.title image{
+    width: 28rpx;
+    margin: 0 10rpx 0 22rpx;
+}
+.slide{
+    height: 450rpx;
+    display: flex;
+    white-space: nowrap;
+    margin: 25rpx 0;
+
+}
+.slide .sro-item{
+    display: inline-block;
+    white-space: normal;
+    width: 300rpx;
+    margin-right: 25rpx;
+    background-color: #fff;
+    border-top-right-radius: 10rpx;
+    border-top-left-radius: 10rpx;
+}
+.item-first{
+    margin-left: 25rpx;
+}
+.slide image{
+    width: 300rpx;
+    border-top-right-radius: 10rpx;
+    border-top-left-radius: 10rpx;
+}
+.h1{
+    font: 30rpx/75rpx sans-serif;
+    display: block;
+    height: 75rpx;
+    overflow: hidden;
+}
+
+/* 价格 */
+.sell{
+    color: #fe4300;
+    font-size: 30rpx;
+}
+.sell::before{
+    content: "￥";
+    font-size: 20rpx;
+}
+
+
+.text-pad{
+    margin: 25rpx;
+    margin-top: 0;
+}
+
+/* 团购  绿底 */
+.people-box{
+    padding: 5rpx 14rpx;
+    background-color: #4fb347;
+    color: #fff;
+    font-size: 22rpx;
+    border-radius: 5rpx;
+    margin-right: 30rpx;
+}
+
+.text-btm{
+    height: 50rpx;
+    overflow: hidden;
+}
+.gray{
+    font-size: 28rpx;
+    color: #919191;
+    white-space: normal;
+}
+
+.item{
+    height: 335rpx;
+    margin-bottom: 25rpx;
+    padding: 30rpx 30rpx 34rpx 14rpx;
+    background-color: #fff;
+}
+
+.item image{
+    width: 206rpx;
+    margin-right: 30rpx;
+    float: left;
+}
+.item .p{
+    font: 25rpx/35rpx sans-serif;
+    display: block;
+    height: 70rpx;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #929292;  
+    margin-bottom: 25rpx; 
+    margin-top: 25rpx; 
+}
+
+.item .price{
+    color: #929292;   
+    font-size: 20rpx;
+    margin-left: 14rpx;
+    text-decoration:line-through;
+}
+.item button{
+    width: 165rpx;
+    height: 60rpx;
+    font: 26rpx/60rpx sans-serif;
+    display: inline-block;
+    background: linear-gradient(to right,#fe7900,#ffa101);
+    position: absolute;
+    right: 35rpx;
+    color: #fff;
+}
+.item button::after{
+    border: 0;
+}
+.item view{
+    margin-top: 55rpx;
+    margin-left: 38rpx;
+    background-color: #fff;
+    height: 50rpx;
+    overflow: hidden;
+    width: 670rpx;
+}
+.item .gray{
+    color: #3f3f3f;
+    height: 30rpx;
+    width: 450rpx;
+    white-space: normal;
+}
+
+
+.city{
+    padding-top: 30rpx;
+}
+.address{
+    background-color: #fff;
+    padding: 20rpx 40rpx 27rpx 30rpx;
+    font-size: 32rpx;
+    position: relative;
+    border-bottom: solid 1rpx #dbdbdb;
+    display: flex;
+    width: 680rpx;
+}
+.address .shop{
+    width: 30rpx;
+    margin-right: 20rpx;
+    align-self: center;
+}
+.address .turn{
+    transform: rotateZ(-90deg);
+    width: 24rpx;
+    height: 13rpx;
+    position: absolute;
+    right: 35rpx;
+    top: 38rpx;
+}
+.address .name{
+    color: #404040;
+    margin-right: 42rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.address .distance{
+    color: #404040;
+}
+.address .more{
+    color: #6e6e6e;
+    position: absolute;
+    right: 60rpx;
+    top:20rpx;
+}
+
+.btm-btn{
+    text-align: center;
+    padding: 25rpx;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.btm-btn button{
+    width: 338rpx;
+    height: 80rpx;
+    display: inline-block;
+    font: 30rpx/80rpx sans-serif;
+}
+.btm-btn button::after{
+    border: 0;
+}
+.good{
+    border-radius: 0;
+    border-top-left-radius: 38rpx;
+    border-bottom-left-radius: 38rpx;
+    border: solid 2rpx #4fb347;
+}
+.mine{
+    border-top-right-radius: 38rpx;
+    border-bottom-right-radius: 38rpx;
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+    border: solid 2rpx #4fb347;
+}
+.good::after{
+    border: solid 2rpx #4fb347;   
+}
+
+
+.choose{
+    background-color:  #4fb349;
+    color: #fff;
+}
+.normal{
+    background-color:  #fff;
+    color: #4fb349;
+}
+
+
+
+
+
+
+
+
+
+.now-shop{
+    height: 90rpx;
+    width: 150rpx;
+    overflow: hidden;
+}
+.choose-shop{
+    height: 90rpx;
+    overflow: hidden;
+}
+.item-last{
+    margin-bottom: 0;
+}
+.last{
+    margin-bottom: 130rpx;
+}

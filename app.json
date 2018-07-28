@@ -1,0 +1,15 @@
+{
+    "pages": [
+        "pages/store/store",
+        "pages/navigator/choose",
+        "pages/index/index",
+        "pages/logs/logs"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#000",
+        "navigationBarTitleText": "好货拼团",
+        "navigationBarTextStyle": "#fff",
+        "backgroundColor": "#fff"
+    }
+}

@@ -1,0 +1,33 @@
+<!-- <text>pages/navigator/choose.wxml</text> -->
+<view class='list'>
+    <view class="shop {{checkedIndex==index?'active':'normal'}}" bindtap="changeShop" data-index="{{index}}" data-shop='{{item.shop1}}'>
+        <view class='row'>
+            <text class='name'>{{item.shop1}}</text>
+            <text class='time'>10:00-21:00</text>
+        </view>
+        <view class='row'>
+            <text class='address'>合肥市经济技术开发区东海星城25栋</text>
+            <text class='distance'> {{'<'}}500m </text>
+        </view>
+    </view>
+    <view class='shop' bindtap="changeShop" data-shop='{{item.shop2}}'>
+        <view class='row'>
+            <text class='name'>{{item.shop2}}</text>
+            <text class='time'>10:00-21:00</text>
+        </view>
+        <view class='row'>
+            <text class='address'>合肥市经济技术开发区东海星城25栋</text>
+            <text class='distance'> {{'<'}}500m </text>
+        </view>
+    </view>
+    <view class='shop' bindtap="changeShop" data-shop='{{item.shop3}}'>
+        <view class='row'>
+            <text class='name'>{{item.shop3}}</text>
+            <text class='time'>10:00-21:00</text>
+        </view>
+        <view class='row'>
+            <text class='address'>合肥市经济技术开发区东海星城25栋</text>
+            <text class='distance'> {{'<'}}500m </text>
+        </view>
+    </view>
+</view>

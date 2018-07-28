@@ -1,0 +1,52 @@
+/* pages/navigator/choose-site.wxss */
+page{
+    background-color:#f7f7f7;
+    padding-top: 15rpx;
+}
+.list{
+    background-color: #fff;
+    border-top: solid 1px #dbdbdb;
+}
+/* 伪类 */
+.shop{
+    border-bottom: solid 1px #dbdbdb;
+    padding: 25rpx 30rpx 20rpx;
+}
+.shop .active{
+    border-bottom: solid 1px #dbdbdb;
+    padding: 25rpx 30rpx 20rpx;
+    background-color: #ddd;
+}
+
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    height: 47rpx;
+    overflow: hidden;
+}
+.name{
+    font: 28rpx/47rpx sans-serif;
+    width: 500rpx;
+    white-space: normal;
+}
+.time{
+    font: 20rpx/47rpx sans-serif;
+    color: #999;
+    width: 190rpx;
+    white-space: normal;
+    text-align: right;
+}
+.address{
+    font:  26rpx/47rpx sans-serif;
+    color:#999;
+    width: 500rpx;
+    white-space: normal;
+}
+.distance{
+    font:  20rpx/47rpx sans-serif;
+    color: #9a9a9a;
+    width: 90rpx;
+    white-space: normal;
+    text-align: center;
+}
